@@ -2,6 +2,7 @@ import React from "react";
 import "./header.scss";
 import headerLogo from "../../assets/headerLogo.svg";
 import NavigationList from "./NavigationList";
+import ProfileInfo from "./ProfileInfo";
 
 const Header = () => {
   return (
@@ -9,7 +10,10 @@ const Header = () => {
       <div>
         <img src={headerLogo} alt="logo" />
       </div>
-      <NavigationList />
+      <div className="right-group">
+        <NavigationList />
+        <ProfileInfo />
+      </div>
     </nav>
   );
 };

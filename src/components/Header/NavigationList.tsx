@@ -4,9 +4,15 @@ import { Link, NavLink } from "react-router-dom";
 const NavigationList = () => {
   return (
     <div className="nav-group">
-      <NavLink to="/">Dashboard</NavLink>
-      <NavLink to="/">Faq</NavLink>
-      <NavLink to="/">Support</NavLink>
+      <NavLink to="/" className="nav-item">
+        Dashboard
+      </NavLink>
+      <NavLink to="/" className="nav-item">
+        Faq
+      </NavLink>
+      <NavLink to="/" className="nav-item">
+        Support
+      </NavLink>
     </div>
   );
 };

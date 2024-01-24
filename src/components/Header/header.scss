@@ -7,3 +7,41 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+
+.nav-group {
+  display: flex;
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-item {
+  text-decoration: none;
+  font: normal normal medium 17px/21px Apercu Pro;
+  letter-spacing: 0px;
+  color: #1a1b1e;
+  opacity: 1;
+  margin-right: 45px;
+}
+
+.profile-info-btn {
+  width: 71px;
+  height: 42px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 5px #0000000d;
+  border: 1px solid #4a4ed4;
+  border-radius: 24px;
+  opacity: 1;
+  color: #4a4ed4;
+  cursor: pointer;
+  font-size: large;
+  .contact-icon {
+    margin-right: 9px;
+  }
+  margin-left: 56px;
+}
+.right-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
