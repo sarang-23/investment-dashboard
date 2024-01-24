@@ -1,12 +1,15 @@
 import "./App.css";
-import Header from "./components/Header";
-
+import Dashboard from "./components/Dashboard";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Dashboard />,
+    errorElement: <div>Not found</div>,
+  },
+]);
 function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
